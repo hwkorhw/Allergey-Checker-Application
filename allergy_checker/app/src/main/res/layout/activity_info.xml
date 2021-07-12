@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_drawable"
+    tools:context=".InfoActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backhome_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="backhome_clicked"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/logo_app" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="정의"
+                android:textColor="#05202C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/box_drawable"
+                android:baselineAligned="true"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_horizontal"
+                    android:text="식품 알레르기가 뭐에요?"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/info_btn1"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.3"
+                    android:onClick="info_btn1_clicked"
+                    android:background="@drawable/click"
+                    app:backgroundTint="#1B1D1E" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="식품 알레르기 관련 정보"
+                android:textColor="#05202C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/box_drawable"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center_horizontal"
+                        android:text="알아둬야 할 알레르기 상식"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/info_btn2"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.3"
+                        android:onClick="info_btn2_clicked"
+                        android:background="@drawable/click"
+                        app:backgroundTint="#1B1D1E" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center_horizontal"
+                        android:text="예방법과 대체 식품"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/info_btn3"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.3"
+                        android:onClick="info_btn3_clicked"
+                        android:background="@drawable/click"
+                        app:backgroundTint="#1B1D1E" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="식품 알레르기 관련 사이트"
+                android:textColor="#05202C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/box_drawable"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center_horizontal"
+                        android:text="세이프 알레르기 (Naver Cafe)"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/info_btn4"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.3"
+                        android:onClick="info_btn4_clicked"
+                        android:background="@drawable/click"
+                        app:backgroundTint="#1B1D1E" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center_horizontal"
+                        android:text="식약청"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/info_btn5"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.3"
+                        android:onClick="info_btn5_clicked"
+                        android:background="@drawable/click"
+                        app:backgroundTint="#1B1D1E" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
